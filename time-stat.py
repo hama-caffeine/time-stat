@@ -1,7 +1,7 @@
 import datetime
 import pandas
 
-# 何桁ほしいか
+# 何桁必要か
 NeedDigit = 3
 
 nums = []
