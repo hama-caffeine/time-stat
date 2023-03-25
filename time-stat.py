@@ -5,10 +5,10 @@ import pandas
 NeedDigit = 3
 
 nums = []
-RoopTimes = 10**NeedDigit	# 繰り返しの回数 10^桁数 で算出
+LoopTimes = 10**NeedDigit	# 繰り返しの回数 10^桁数 で算出
 
-# RoopTimes回現在時刻のマイクロ秒の後ろNeedDigit桁を取得し配列化
-for i in range(RoopTimes):
+# LoopTimes回現在時刻のマイクロ秒の後ろNeedDigit桁を取得し配列化
+for i in range(LoopTimes):
 	NowDateTime = str(datetime.datetime.now())	# 現在の時刻をマイクロ秒まで取得し型を文字列に
 	num = int(NowDateTime[-NeedDigit:]) # 後ろから初期値の桁数を取得
 	nums.append(num) # 配列に挿入
